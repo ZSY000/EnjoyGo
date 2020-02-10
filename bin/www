@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('enjoy-go:server');
+var debug = require('debug')('enjoygo:server');
 var http = require('http');
 
 /**

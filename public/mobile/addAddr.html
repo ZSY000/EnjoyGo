@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>好享Go商城</title>
+    <link rel="stylesheet" href="assets/mui/dist/css/mui.min.css"/>
+    <link rel="stylesheet" href="assets/mui/examples/hello-mui/css/mui.picker.css"/>
+    <link rel="stylesheet" href="assets/mui/examples/hello-mui/css/mui.poppicker.css"/>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/address.css"/>
+    <script src="assets/zepto.js"></script>
+    <script src="assets/mui/dist/js/mui.min.js"></script>
+    <script src="assets/mui/examples/hello-mui/js/mui.picker.js"></script>
+    <script src="assets/mui/examples/hello-mui/js/mui.poppicker.js"></script>
+    <script src="js/addAddr.js"></script>
+    <script src="js/public.js"></script>
+
+</head>
+<body>
+<!--头部-->
+<header class="mui-bar mui-bar-nav my-header">
+    <h1 class="mui-title">添加收货地址</h1>
+    <span class="mui-icon mui-icon-search mui-pull-right"></span>
+</header>
+
+<!--底部导航-->
+<nav class="mui-bar mui-bar-tab my-footer">
+    <a class="mui-tab-item" href="index.html">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="category.html">
+        <span class="mui-icon mui-icon-bars"></span>
+        <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="cart.html">
+        <span class="mui-icon fa fa-shopping-cart"></span>
+        <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item mui-active" href="user.html">
+        <span class="mui-icon mui-icon-person"></span>
+        <span class="mui-tab-label">会员中心</span>
+    </a>
+</nav>
+
+<!--内容-->
+<div class="mui-content addAddr">
+    <form class="mui-input-group" id="editForm">
+        <div class="mui-input-row">
+            <input type="text" class="mui-input-clear" name="username" placeholder="收货人姓名">
+        </div>
+        <div class="mui-input-row">
+            <input type="text" class="mui-input-clear" name="postCode" placeholder="邮编">
+        </div>
+        <div class="mui-input-row">
+            <input id="selectCity" readonly type="text" class="mui-input-clear" name="addr" placeholder="请选择省市区">
+        </div>
+        <div class="mui-input-row">
+            <input type="text" class="mui-input-clear" name="addrDetial" placeholder="详细地址">
+        </div>
+        <div class="mui-button-row">
+            <button type="button" class="mui-btn mui-btn-primary" id="confirm-btn">确认</button>
+        </div>
+    </form>
+</div>
+
+<!--编辑模板-->
+<script id="editTpl" type="x-art-template">
+
+</script>
+</body>
+</html>

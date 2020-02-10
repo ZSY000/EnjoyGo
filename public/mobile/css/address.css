@@ -1,0 +1,10 @@
+.mui-content>.mui-table-view:first-child{
+    margin: 0;!important;
+}
+.addr,.addAddr form input{
+    font-size: 14px;
+}
+.addr ul li:first-child a{
+    text-align: center;
+    font-size: 16px;
+}

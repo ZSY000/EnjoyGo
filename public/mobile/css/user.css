@@ -1,0 +1,9 @@
+.list li{
+    font-size: 14px;
+}
+.list li:last-child{
+    color: #4A82D1;
+}
+.mui-content>.mui-table-view:first-child{
+    margin: 0px;!important;
+}

@@ -1,0 +1,23 @@
+.mui-content img{
+    display: block;
+    margin: 20px auto;
+}
+.mui-content h4{
+    width: 100%;
+    text-align: center;
+    color: #444;
+    font-weight: normal;
+    margin-top: 40px;
+}
+.mui-content a{
+    display: block;
+    width:90px;
+    height: 40px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    background-color: #777675;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 40px;
+    text-align: center;
+}

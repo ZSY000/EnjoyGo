@@ -1,0 +1,15 @@
+.getCode{
+    color: #4A82D1;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login-now{
+    color: #4A82D1;
+    margin: 10px 8px 0 0;
+}
+.mui-input-row label,.mui-input-row label~input{
+    font-size: 14px;
+}

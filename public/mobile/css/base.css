@@ -1,0 +1,118 @@
+*{
+    touch-action: none;
+}
+
+.my-header{
+    background-color: #ff7708;
+}
+.my-header h1{
+    color: #fff;
+}
+.my-header .mui-icon{
+    color: #fff;
+}
+
+
+.my-footer{
+    background-color: #fff;
+    box-shadow: none;
+    border-top: 1px solid #ddd;
+}
+.my-footer .mui-tab-item{
+    color: #444;
+}
+
+.my-footer .mui-tab-item.mui-active{
+    color: #ff7708;
+}
+
+
+.nav-links{
+    padding: 10px;
+    box-sizing: border-box;
+}
+.nav-links a{
+    float: left;
+    width: 33.3333%;
+    border: 1px solid #EDEDED;
+}
+.nav-links a img{
+    width: 100%;
+}
+
+
+.brand{
+    background-color: #fff;
+}
+.brand .title img{
+    width: 100%;
+}
+.brand ul{
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.brand ul li{
+    float: left;
+    width: 25%;
+}
+.brand ul li a{
+    display: block;
+}
+.brand ul li a img{
+    width: 100%;
+}
+
+/*�˶�����ר��*/
+.sport{
+    overflow: hidden;
+}
+.sport .title img{
+    width: 100%;
+    margin-top: 10px;
+}
+.sport ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sport ul li{
+    width: 46%;
+    float: left;
+    margin: 2%;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #ddd;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.sport ul li a{
+    display: block;
+}
+.sport ul li a img{
+    width: 100%;
+}
+.sport ul li a span{
+    display: block;
+    text-align: center;
+    padding: 0 5px;
+    color: #555;
+}
+.sport ul li p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 25px;
+}
+.sport ul li p span{
+    margin: 0 10px;
+}
+.sport ul li p span:first-child{
+    color: #f00;
+}
+.sport ul li p span:last-child{
+    color: #bbb;
+    text-decoration: line-through;
+}

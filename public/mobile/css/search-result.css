@@ -1,0 +1,13 @@
+.filter{
+}
+.filter .mui-col-xs-6{
+    height: 35px;
+    font-size: 14px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 35px;
+}
+.filter span{
+    font-size: 12px;
+    margin-left: 3px;
+}

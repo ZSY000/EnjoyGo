@@ -286,7 +286,7 @@ body
     line-height: 21px;
 
     color: #000;
-    background-color: #efeff4;
+    background-color: #EDEDED;
 
     -webkit-overflow-scrolling: touch;
 }
@@ -304,7 +304,7 @@ a:active
 
 .mui-content
 {
-    background-color: #efeff4;
+    background-color: #EDEDED;
 
     -webkit-overflow-scrolling: touch;
 }
@@ -4940,7 +4940,7 @@ body > .mui-progressbar
 
     border: solid 1px #bbb;
     border-radius: 3px;
-    background-color: #efeff4;
+    background-color: #EDEDED;
 }
 .mui-numbox [class*=numbox-btn], .mui-numbox [class*=btn-numbox]
 {

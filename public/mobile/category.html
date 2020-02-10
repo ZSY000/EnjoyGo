@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>好享Go商城</title>
+    <link rel="stylesheet" href="assets/mui/dist/css/mui.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/category.css"/>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"/>
+    <script src="assets/mui/dist/js/mui.min.js"></script>
+    <script src="assets/template-web.js"></script>
+    <script src="assets/zepto.js"></script>
+    <script src="js/category.js"></script>
+    <script src="js/public.js"></script>
+</head>
+<body>
+<!--头部-->
+<header class="mui-bar mui-bar-nav my-header">
+    <h1 class="mui-title">分类</h1></h1>
+    <a href="search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
+</header>
+
+<!--底部导航-->
+<nav class="mui-bar mui-bar-tab my-footer">
+    <a class="mui-tab-item " href="index.html">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item mui-active" href="category.html">
+        <span class="mui-icon mui-icon-bars"></span>
+        <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="cart.html">
+        <span class="mui-icon fa fa-shopping-cart"></span>
+        <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item" href="user.html">
+        <span class="mui-icon mui-icon-person"></span>
+        <span class="mui-tab-label">会员中心</span>
+    </a>
+</nav>
+
+<!--内容-->
+<div class="my-content">
+    <div class="category-left">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div class="links" id="links">
+                    <!--从数据库中获取数据-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="category-right">
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <ul class="brand-list mui-clearfix" id="secondCategory">
+                    <!--从数据库中获取数据-->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script id="category-first" type="text/template">
+    <% for(var i = 0 ; i < result.length ; i++){ %>
+    <a href="#" data-id="<%=result[i].id %>"> <%= result[i].categoryName %> </a>
+    <% } %>
+</script>
+
+<script id="second" type="text/x-art-template">
+    <% for(var i = 0 ; i < result.length ; i++){ %>
+    <li><a href="#"><img src="<%= result[i].brandLogo %>" alt=""/><p><%= result[i].brandName %></p></a></li>
+    <% } %>
+</script>
+</body>
+</html>

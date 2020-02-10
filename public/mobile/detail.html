@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>好享Go商城</title>
+    <link rel="stylesheet" href="assets/mui/dist/css/mui.min.css"/>
+    <link rel="stylesheet" href="css/detail.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"/>
+    <script src="assets/mui/dist/js/mui.min.js"></script>
+    <script src="assets/zepto.js"></script>
+    <script src="js/detail.js"></script>
+    <script src="js/public.js"></script>
+</head>
+<body>
+<!--头部-->
+<header class="mui-bar mui-bar-nav my-header">
+    <h1 class="mui-title">商品详情</h1>
+    <span class="mui-icon mui-icon-search mui-pull-right"></span>
+</header>
+
+<!--底部导航-->
+<nav class="mui-bar mui-bar-tab my-footer">
+    <a class="mui-tab-item" href="index.html">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="category.html">
+        <span class="mui-icon mui-icon-bars"></span>
+        <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="cart.html">
+        <span class="mui-icon fa fa-shopping-cart"></span>
+        <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item" href="user.html">
+        <span class="mui-icon mui-icon-person"></span>
+        <span class="mui-tab-label">会员中心</span>
+    </a>
+</nav>
+
+<!--内容-->
+<div class="mui-content cont">
+    <div id="box">
+        <!--轮播图-->
+        <div class="mui-slider">
+            <div class="mui-slider-group">
+                <div class="mui-slider-item">
+                    <img src="images/product1.jpg" />
+                </div>
+                <div class="mui-slider-item">
+                    <img src="images/product1.jpg" />
+                </div>
+            </div>
+        </div>
+        <p class="title">红蜻蜓 女式 惊艳红 春秋款高跟鞋</p>
+        <div class="price">
+            价格：<span class="now">￥299</span>
+            <span class="old">￥360</span>
+        </div>
+        <div class="size">尺码：
+            <span>35</span>
+            <span>36</span>
+            <span>37</span>
+            <span>38</span>
+            <span>39</span>
+            <span>40</span>
+            <span>41</span>
+            <span>42</span>
+        </div>
+    </div>
+
+    <div class="num mui-clearfix">
+        <div class="mui-pull-left">数量：</div>
+        <div class="mui-pull-left">
+            <span class="minus">-</span><span class="count">1</span><span class="plus">+</span>
+        </div>
+        <div class="mui-pull-left">
+            剩余：30件
+        </div>
+    </div>
+
+    <div class="btn">
+        <span>查看购物车</span><span class="addToCart">加入购物车</span>
+    </div>
+</div>
+
+<!--内容详情模板-->
+<script id="detailTpl" type="text/x-art-template">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+.mui-content{
+    background-color: #fff;
+}
+.cont{
+    font-size: 14px;
+}
+.title{
+    font-size: 16px;
+    color: #444;padding: 10px;
+    border-top: 1px solid #eee;
+}
+.price{
+    border-bottom: 1px solid #eee;
+    margin: 0px;
+    padding-right: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.price .now{
+    color: #f00;
+    font-size: 18px;
+}
+.price .old{
+    text-decoration: line-through;
+    color: #aaa;
+}
+.size,.num{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.size span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #bbb;
+    color: #555;
+    margin: 4px;
+    text-align: center;
+}
+.num span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 0;
+    color: #555;
+}
+.num span:first-child{
+    border-right: none;
+}
+.num span:last-child{
+    border-left: none;
+}
+.num div:last-child{
+    margin-left: 10px;
+}
+.btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn span{
+    display: inline-block;
+    width: 45%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: orange;
+}
+.btn span:last-child{
+    background-color: #FF3B30;
+}
+span.active{
+    color: #fff;!important;
+    background-color: #fa672d;
+}

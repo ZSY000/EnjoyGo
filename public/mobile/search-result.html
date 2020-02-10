@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>好享Go商城</title>
+    <link rel="stylesheet" href="assets/mui/dist/css/mui.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/search-result.css"/>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"/>
+    <script src="assets/mui/dist/js/mui.min.js"></script>
+    <script src="assets/template-web.js"></script>
+    <script src="assets/zepto.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/search-result.js"></script>
+
+</head>
+<body>
+<!--头部-->
+<header class="mui-bar mui-bar-nav my-header">
+    <h1 class="mui-title">搜索结果</h1>
+</header>
+
+<!--底部导航-->
+<nav class="mui-bar mui-bar-tab my-footer">
+    <a class="mui-tab-item mui-active" href="index.html">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="category.html">
+        <span class="mui-icon mui-icon-bars"></span>
+        <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="cart.html">
+        <span class="mui-icon fa fa-shopping-cart"></span>
+        <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item" href="user.html">
+        <span class="mui-icon mui-icon-person"></span>
+        <span class="mui-tab-label">会员中心</span>
+    </a>
+</nav>
+
+<!--内容-->
+<div class="mui-content">
+    <div class="mui-row filter">
+        <div class="mui-col-xs-6">价格<span class="mui-icon mui-icon-arrowdown"></span></div>
+        <div class="mui-col-xs-6">销量<span class="mui-icon mui-icon-arrowdown"></span></div>
+    </div>
+    <div class="sport">
+        <ul id="searchResult">
+            <!--从数据库中获取-->
+        </ul>
+    </div>
+</div>
+
+
+<!--实现页面加载-->
+<div class="mui-content" id="refreshContainer">
+
+</div>
+
+
+
+<!--模板代码-->
+<script id="search-result" type="text/x-art-template">
+    <% for(var i = 0 ; i< result.length ; i++){ %>
+    <li>
+        <a href="#">
+            <img src="<%= result[i].proImg %>" alt=""/>
+            <span class="name"><%= result[i].detail %></span>
+        </a>
+        <p>
+            <span>￥<%= result[i].newPrice %></span>
+            <span>￥<%= result[i].oldPrice %></span>
+        </p>
+        <button type="button" class="mui-btn mui-btn-danger">立即购买</button>
+    </li>
+    <% } %>
+</script>
+
+</body>
+</html>

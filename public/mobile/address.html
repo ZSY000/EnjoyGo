@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>好享Go商城</title>
+    <link rel="stylesheet" href="assets/mui/dist/css/mui.min.css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/address.css"/>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"/>
+    <script src="assets/mui/dist/js/mui.min.js"></script>
+    <script src="assets/zepto.js"></script>
+    <script src="js/address.js"></script>
+    <script src="js/public.js"></script>
+</head>
+<body>
+<!--头部-->
+<header class="mui-bar mui-bar-nav my-header">
+    <h1 class="mui-title">收货地址列表</h1>
+    <span class="mui-icon mui-icon-search mui-pull-right"></span>
+</header>
+
+<!--底部导航-->
+<nav class="mui-bar mui-bar-tab my-footer">
+    <a class="mui-tab-item" href="index.html">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="category.html">
+        <span class="mui-icon mui-icon-bars"></span>
+        <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="cart.html">
+        <span class="mui-icon fa fa-shopping-cart"></span>
+        <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item mui-active" href="user.html">
+        <span class="mui-icon mui-icon-person"></span>
+        <span class="mui-tab-label">会员中心</span>
+    </a>
+</nav>
+
+<!--内容-->
+<div class="mui-content addr">
+    <ul class="mui-table-view" id="list">
+        <li class="mui-table-view-cell mui-media">
+            <a href="addAddr.html?idEdit=0">添加收货地址</a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-transitioning">
+            <div class="mui-slider-right mui-disabled">
+                <span href="addAddress.html" class="mui-btn mui-btn-blue edit-btn" data-id="1">编辑</span>
+                <span href="" class="mui-btn mui-btn-red del-btn" data-id="1">删除</span>
+            </div>
+            <div class="mui-media-body mui-slider-handle">
+                邮编：10000 收货人：张三
+                <p class='mui-ellipsis'>武汉市洪山区华中师范大学</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--收货地址模板-->
+<script id="addressList" type="text/x-art-template">
+
+</script>
+</body>
+</html>
